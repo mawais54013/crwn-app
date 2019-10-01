@@ -30,7 +30,7 @@ class App extends React.Component {
           })
         });
       }
-      setCurrentUser(serAuth);
+      setCurrentUser(userAuth);
     });
   }
 
@@ -61,11 +61,11 @@ class App extends React.Component {
 
 const mapStateToProps = ({ user }) => ({
   currentUser: user.currentUser
-})
+});
 
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
 
-export default connect(null, mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
