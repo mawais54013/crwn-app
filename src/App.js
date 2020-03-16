@@ -15,6 +15,7 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
 //import testing here in app.js
+// checking if the following will have impact?
  
 class App extends React.Component {
 
